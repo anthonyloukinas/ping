@@ -35,6 +35,39 @@ job_templates:
     start_at_task: # task1
     vault_credential: # vault_cred1
     survey_spec: # yaml/json dict
+  Ping2:
+    ask_credential: no
+    ask_diff_mode: no
+    ask_extra_vars: no
+    ask_inventory:  no
+    ask_job_type: no
+    ask_limit: no
+    ask_skip_tags: no
+    ask_tags: no
+    ask_verbosity: no
+    become_enabled: no
+    concurrent_jobs_enabled: no
+    diff_mode_enabled: no
+    fact_caching_enabled: no
+    force_handlers_enabled: no
+    survey_enabled: no
+
+    name: Ping
+    description: "Ping Job Template"
+    inventory: "tower-inventory"
+    playbook: main.yml
+    project: "ping"
+    state: present
+    verbosity: 0
+
+    forks: # 1
+    credential: # credential name
+    job_tags: # tag1,tag2
+    limit: # host1,group1
+    skip_tags: # tag1,tag2
+    start_at_task: # task1
+    vault_credential: # vault_cred1
+    survey_spec: # yaml/json dict
 
 project:
   name: ping
