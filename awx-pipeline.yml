@@ -26,15 +26,8 @@ job_templates:
     project: "ping"
     state: present
     verbosity: 0
+    job_type: run
 
-    forks: # 1
-    credential: # credential name
-    job_tags: # tag1,tag2
-    limit: # host1,group1
-    skip_tags: # tag1,tag2
-    start_at_task: # task1
-    vault_credential: # vault_cred1
-    survey_spec: # yaml/json dict
   Ping2:
     ask_credential: no
     ask_diff_mode: no
@@ -59,15 +52,6 @@ job_templates:
     project: "ping"
     state: present
     verbosity: 0
-
-    forks: # 1
-    credential: # credential name
-    job_tags: # tag1,tag2
-    limit: # host1,group1
-    skip_tags: # tag1,tag2
-    start_at_task: # task1
-    vault_credential: # vault_cred1
-    survey_spec: # yaml/json dict
 
 project:
   name: ping
