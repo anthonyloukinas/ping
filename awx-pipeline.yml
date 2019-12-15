@@ -22,7 +22,7 @@ job_templates:
   description: "Ping Job Template"
   inventory: "tower-inventory"
   playbook: main.yml
-  project: "{{ ping"
+  project: "ping"
   state: present
   verbosity: 0
 
