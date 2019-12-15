@@ -45,7 +45,7 @@ job_templates:
         type: multiplechoice
         variable: favorite_color
 
-  Ping2:
+  Ping3:
     ask_credential: no
     ask_diff_mode: no
     ask_extra_vars: no
