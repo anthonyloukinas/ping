@@ -32,9 +32,9 @@ job_templates:
       name: ""
       description: ""
       spec:
-      - choices: 'Red
-        Blue
-        Green'
+      - choices:
+          - red
+          - blue
         default: Red
         max: null
         min: null
