@@ -18,11 +18,11 @@ job_templates:
   force_handlers_enabled: no
   survey_enabled: no
 
-  name: ping_job
-  description: "ping job template"
+  name: Ping
+  description: "Ping Job Template"
   inventory: "tower-inventory"
   playbook: main.yml
-  project: ping
+  project: "{{ ping"
   state: present
   verbosity: 0
 
@@ -43,7 +43,7 @@ project:
   scm_clean: no
   scm_update_on_launch: no
   scm_delete_on_update: no
-  scm_credential: None
+  scm_credential: ""
   scm_type: git
   scm_url: "https://github.com/anthonyloukinas/ping.git"
   state: present
